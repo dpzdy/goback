@@ -4,7 +4,12 @@ go 1.20
 
 require github.com/beego/beego/v2 v2.1.0
 
-require github.com/smartystreets/goconvey v1.6.4
+require (
+	github.com/mattn/go-sqlite3 v1.14.19
+	github.com/smartystreets/goconvey v1.6.4
+	gorm.io/driver/sqlite v1.5.4
+	gorm.io/gorm v1.25.5
+)
 
 require (
 	github.com/beorn7/perks v1.0.1 // indirect
@@ -16,7 +21,6 @@ require (
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/jtolds/gls v4.20.0+incompatible // indirect
 	github.com/kr/text v0.2.0 // indirect
-	github.com/mattn/go-sqlite3 v1.14.19 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
@@ -32,6 +36,4 @@ require (
 	golang.org/x/text v0.7.0 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	gorm.io/driver/sqlite v1.5.4 // indirect
-	gorm.io/gorm v1.25.5 // indirect
 )
