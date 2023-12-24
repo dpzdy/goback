@@ -1,7 +1,7 @@
 // @APIVersion 1.0.0
 // @Title HotNewsAPI
-// @Description 国际热点十大新闻API
-// @Contact zhnag_yuu@outlook.com
+// @Description HotNewsAPI
+// @Contact zhang_yuu@outlook.com
 package routers
 
 import (
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	ns :=
-		beego.NewNamespace("/v1",
+		beego.NewNamespace("/hotNews",
 			beego.NSInclude(
 				&controllers.InfoController{},
 			),

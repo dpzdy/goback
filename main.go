@@ -6,7 +6,6 @@ import (
 	"github.com/beego/beego/v2/server/web/context"
 	"github.com/beego/beego/v2/server/web/filter/cors"
 	_ "goback/routers"
-	_ "goback/utils"
 )
 
 func main() {

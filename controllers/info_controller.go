@@ -1,6 +1,8 @@
 package controllers
 
-import "goback/services"
+import (
+	"goback/services"
+)
 
 type InfoController struct {
 	BaseController

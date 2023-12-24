@@ -6,3 +6,7 @@ type Info struct {
 	UserName      string `gorm:"type:varchar(255)"`
 	UserAuthority string `gorm:"type:varchar(255)"`
 }
+
+func (Info) TableName() string {
+	return "UserEmail"
+}

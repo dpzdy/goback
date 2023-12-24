@@ -7,8 +7,8 @@ import (
 
 func AllInfo() ([]models.Info, error) {
 	var infos []models.Info
-	utils.DB.Find(&infos)
-
+	db := utils.InitDB()
+	db.Find(&infos)
 	if infos == nil || len(infos) == 0 {
 		return make([]models.Info, 0), nil
 	}
