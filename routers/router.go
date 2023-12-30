@@ -11,9 +11,12 @@ import (
 
 func init() {
 	ns :=
-		beego.NewNamespace("/hotNews",
+		beego.NewNamespace("/hotnews",
 			beego.NSInclude(
 				&controllers.InfoController{},
+			),
+			beego.NSInclude(
+				&controllers.FTempController{},
 			),
 		)
 	beego.AddNamespace(ns)

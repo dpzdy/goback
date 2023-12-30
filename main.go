@@ -6,9 +6,11 @@ import (
 	"github.com/beego/beego/v2/server/web/context"
 	"github.com/beego/beego/v2/server/web/filter/cors"
 	_ "goback/routers"
+	"goback/services"
 )
 
 func main() {
+	services.ServiceInit()
 	//fmt.Println(beego.BConfig.Listen.EnableAdmin)
 	fmt.Println(beego.BConfig.RunMode)
 

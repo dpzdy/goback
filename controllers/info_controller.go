@@ -16,6 +16,6 @@ func (sc *InfoController) GetAll() {
 	if err != nil {
 		sc.RespMsg(FAIL, "get all students "+err.Error())
 	}
-	sc.RespData(SUCCESS, stus, "get all students", len(stus))
+	sc.RespData(SUCCESS, stus)
 
 }
