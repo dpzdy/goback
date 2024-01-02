@@ -63,6 +63,7 @@ func (ft *FTempController) GetNumsOnSource() {
 // @Title GetRealTimeNews
 // @Description 获取实时新闻
 // @router /realtimenews/:topic [get]
+// http://localhost:8080/hotnews/realtimenews?topic=%E4%B8%AD%E7%BE%8E
 func (ft *FTempController) GetRealTimeNews() {
 	topic := ft.GetString("topic")
 	infos, err := services.FtempServiceMgr.GetRealTimeNews(topic)
