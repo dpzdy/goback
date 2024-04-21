@@ -89,3 +89,26 @@ func TestMyPool(t *testing.T) {
 
 	p.Run()
 }
+
+func TestDeadLock(t *testing.T) {
+	//ch := make(chan int)
+	////fmt.Println(<-ch)
+	//ch <- 45
+	////go func() {
+	////	ch <- 45
+	////}()
+
+	//ch := make(chan int, 3)
+	//ch <- 3
+	//ch <- 4
+	//ch <- 5
+	//ch <- 6
+	//
+
+	fmt.Println(SumIntOrFloat(2, 2))
+
+}
+
+func SumIntOrFloat[T int | float64](a, b T) T {
+	return a + b
+}
